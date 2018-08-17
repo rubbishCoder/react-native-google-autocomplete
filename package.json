@@ -1,6 +1,6 @@
 {
   "name": "react-native-google-autocomplete-with-dropdownclose",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Google autocomplete with closable dropdown",
   "main": "GooglePlacesAutocomplete.js",
   "scripts": {
