@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import Qs from 'qs';
 import debounce from 'lodash.debounce';
-import { Card, Button } from 'antd-mobile';
+import { Card, Button } from 'antd-mobile-rn';
 
 const WINDOW = Dimensions.get('window');
 
@@ -680,7 +680,7 @@ export default class GooglePlacesAutocomplete extends Component {
   }
   render() {
     let {
-            onFocus,
+      onFocus,
       ...userProps
     } = this.props.textInputProps;
     return (
@@ -704,7 +704,7 @@ export default class GooglePlacesAutocomplete extends Component {
               onFocus={onFocus ? () => { this._onFocus(); onFocus() } : this._onFocus}
               clearButtonMode="while-editing"
               underlineColorAndroid={this.props.underlineColorAndroid}
-              { ...userProps }
+              {...userProps}
               onChangeText={this._handleChangeText}
             />
             {this.state.listViewDisplayed ?
@@ -713,8 +713,8 @@ export default class GooglePlacesAutocomplete extends Component {
                 <Button
                   size='small'
                   onClick={this._onBlur}>
-                  X
-              </Button>
+                  <Text>X</Text>
+                </Button>
               </View>
               : <View />}
             {this._renderRightButton()}
