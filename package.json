@@ -1,6 +1,6 @@
 {
   "name": "react-native-google-autocomplete-with-dropdownclose",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "description": "Google autocomplete with closable dropdown",
   "main": "GooglePlacesAutocomplete.js",
   "scripts": {
@@ -27,10 +27,11 @@
     "lodash.debounce": "^4.0.8",
     "prop-types": "^15.5.10",
     "qs": "^5.2.0",
-    "antd-mobile-rn": "^2.2.1"
+    "antd-mobile-rn": "^2.2.1",
+    "antd-mobile": "^2.1.3"
   },
   "devDependencies": {
-    "eslint": "^1.9.0",
+    "eslint": "^5.4.0",
     "eslint-config-airbnb": "^1.0.0",
     "eslint-plugin-react": "^3.9.0"
   },
